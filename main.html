@@ -7,60 +7,53 @@
 </head>
 
 <body>
-	<form action="">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Name" required />
-
-      <p>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email" required />
-      </p>
-
-      <p>Gender</p>
-      <input type="radio" name="gender" id="gender_m" required />
-      <label for="">Male</label>
-      <input type="radio" name="gender" id="gender_f" required />
-      <label for="">Female</label>
-
-      <p>
-        <label for="cars">Car</label>
-        <select name="car" id="cars" aria-placeholder="Please choose an option" required>
-          <option value="bmw">BMW</option>
-          <option value="audi">Audi</option>
-          <option value="mercedez">Mercedez</option>
-        </select>
-      </p>
-
-      <p>
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age" placeholder="Age" required />
-      </p>
-
-      <p>
-        <label for="dob">DOB</label>
-        <input type="date" name="dob" id="dob" required />
-      </p>
-
-      <p>
-        <label for="tel">Phone Number</label>
-        <input type="number" name="number" id="tel" placeholder="xxx-xxx-xxxx"/>
-      </p>
-
-      <p>
-        <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Password" id="password" required />
-      </p>
-
-      <p>
-        <input type="checkbox" name="checkbox" id="checkbox" required />
-        <label for="">I agree to the TOS</label>
-      </p>
-
-      <p>
-        <input type="submit" name="submit" id="submit" />
-      </p>
-    </form>
-
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
+	<div class="main">
+	<div class="register">
+	  <h2>Car Sign-up Form</h2>
+	  <form method="post">
+		<div>
+          <label for="name">Name*</label><br>
+          <input type="text" id="name" placeholder="Enter your name" required>
+		</div><br>
+		<div>
+			<label for="email">Email*</label><br>
+			<input type="email" id="email" placeholder="Enter your email id" required>
+		</div><br>
+		<div>
+			<label>Gender*</label>
+			<label for="gender">Male</label>
+			<input type="radio" id="gender" name="gender" required>
+			<label for="gender">Female</label>
+			<input type="radio" id="gender" name="gender" required>
+		</div><br>
+		<div>
+			<label for="cars">Car Brands</label>
+			<select name="laptop" id="cars">
+				<option value="BMW">BMW</option>
+				<option value="Audi">Audi</option>
+				<option value="Mercedez">Mercedez</option>
+			</select>
+		</div><br>
+	    <div>
+			<label for="age">Age*</label><br>
+			<input type="number" id="age" placeholder="Enter the age of your car" required>
+		<div><br>
+			<label for="dob">DOB*</label>
+			<input type="date" id="dob" required>
+		</div><br>
+	    <div>
+			<label for="password">Password</label><br>
+			<input type="password" id="password" placeholder="Enter your password" required>
+		</div><br>
+		<div>
+			<button type="submit" id="submit">Submit</button>
+		</div><br>
+	</form>
+	</div>
+	</div>
 </body>
 
 </html>
